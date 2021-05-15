@@ -4,6 +4,8 @@ import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link as Scroll } from 'react-scroll';
+import useSound from 'use-sound';
+import { PlayArrow } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,6 +46,8 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 export default function Header() {
+  const soundUrl = '/assets/click.mp3';
+  const play = useSound(soundUrl);
   const classes = useStyles();
   const [checked, setChecked] = useState(false);
   useEffect(() => {
@@ -56,8 +60,8 @@ export default function Header() {
           <h1 className={classes.appbarTitle}>
             Arya<span className={classes.colorText}> Majiah</span>
           </h1>
-          <IconButton>
-            <FavoriteIcon className={classes.icon} />
+          <IconButton onClick='play()'>
+            <FavoriteIcon className={classes.icon} onClick={play}/>
           </IconButton>
         </Toolbar>
       </AppBar>

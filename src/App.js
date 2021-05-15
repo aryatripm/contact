@@ -21,7 +21,6 @@ export default function App() {
       <CssBaseline />
       <Header />
       <Contact />
-      <PlaceToVisit />
       <Footer />
     </div>
   );

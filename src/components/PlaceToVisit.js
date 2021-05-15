@@ -2,7 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import ImageCard from './ImageCard';
 import places from '../static/places';
-import useWindowPosition from '../hook/useWindowPosition';
+// import useWindowPosition from '../hook/useWindowPosition';
 const useStyles = makeStyles((theme) => ({
   root: {
     minHeight: '100vh',
@@ -16,11 +16,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 export default function () {
   const classes = useStyles();
-  const checked = useWindowPosition('header');
+  //const checked = useWindowPosition('header');
   return (
     <div className={classes.root} id="place-to-visit">
-      <ImageCard place={places[0]} checked={checked} />
-      <ImageCard place={places[1]} checked={checked} />
+      <ImageCard place={places[0]}  />
+      <ImageCard place={places[1]}  />
     </div>
   );
 }

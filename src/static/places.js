@@ -10,7 +10,7 @@ const places = [
     title: 'Bora Bora',
     description:
       'Shaped like a giant sombrero, this lush volcanic island stars in countless South Pacific fantasies. The focal point and best asset of this tropical beauty is its ravishing lagoon in technicolor turquoise. Fish, turtles, sharks, and rays swim in the clear waters.',
-    imageUrl: process.env.PUBLIC_URL + '/assets/island2.jpg',
+    imageUrl: process.env.PUBLIC_URL + '/assets/click.wav',
     time: 1500,
   },
 ];

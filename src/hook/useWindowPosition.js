@@ -1,6 +1,6 @@
 import { useLayoutEffect, useState } from 'react';
 
-export default function useWindowPosition(id) {
+/* export default function useWindowPosition(id) {
   const [animation, setAnimation] = useState(false);
 
   useLayoutEffect(() => {
@@ -15,4 +15,4 @@ export default function useWindowPosition(id) {
     return () => window.removeEventListener('scroll', updatePosition);
   }, [id]);
   return animation;
-}
+} */
