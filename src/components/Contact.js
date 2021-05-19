@@ -49,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
                                                                     onMouseLeave={() => {setIsHovering(false); stop(); }}>
                     <GitHub className={classes.icon} href="https://github.com/aryatriputram" isHovering={isHovering}/>
                 </IconButton>
-                <IconButton href="https://telegram.me/karinaro_Bot">
+                <IconButton href="https://telegram.me/suamikrystal_bot">
                     <Telegram className={classes.icon}/>
                 </IconButton>
                 <IconButton href="mailto:09ofarya@gmail.com">
